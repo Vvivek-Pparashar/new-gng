@@ -4,6 +4,7 @@ import Showcase from "./showcase/ShowCase";
 import OurProjectsHero from "./ourProjectsHero/OurProjectsHero";
 import Floating from "../FloatingWhatsapp/Floating";
 import NewNavBar from "../NavBar/NewNavBar";
+import { ScrollRestoration } from "react-router-dom";
 
 const OurProjects = () => {
   return (
@@ -11,6 +12,7 @@ const OurProjects = () => {
       <NewNavBar/>
       <Showcase />
       <Footer />
+      <ScrollRestoration/>
       <Floating/>
     </div>
   );
