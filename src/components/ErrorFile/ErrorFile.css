@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&display=swap");
+
+.error{
+    width: 100%;
+    /* height: 100vh; */
+    padding: 30px 0;
+}
+.error >.container {
+    /* background-color: rgb(150, 49, 49); */
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gif {
+    background-image: url("https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif");
+    width: 683px;
+    height: 409.8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error404-numb2 {
+    font-family: "Quintessential", cursive;
+    font-size: 100px;
+    line-height: 120px;
+}
+
+.font-poppins {
+    align-items: center;
+    text-align: center;
+    font-size: 21px;
+    color: #6b6d6f;
+    font-family: "Poppins", Arial, Helvetica, sans-serif ;
+}
+
+.button button {
+    color: #fff !important;
+    padding: 13px 30px;
+    background: #39ac31;
+    margin: 50px 0 0 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif ;
+}
+
+.tips {
+    width: 80vw;
+    margin: auto;
+    margin: 3vw auto 5vw auto;
+}
+
+.tips .font-poppins {
+    text-align: inherit;
+}
+
+.tips p {
+    margin-bottom: 10px;
+}
+
+.tips .font-poppins ul {
+    margin-left: 45px;
+}
+
+.font-poppins > ul > li {
+    font-family: "Poppins", Arial, Helvetica, sans-serif !important;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #6b6d6f;
+}
+
+@media screen and (max-width: 600px) {
+    .error > .container {
+        height: 80vh;
+        min-height: 500px;
+    }
+
+    .gif {
+        width: 120vw;
+        height: 80vw;
+        overflow-x: hidden;
+    }
+
+    .error404-numb2 {
+        font-size: 80px;
+        line-height: 100px;
+    }
+
+    .font-poppins {
+        font-size: 17px;
+    }
+
+    .tips {
+        width: 90vw;
+    }
+
+    .tips p {
+        margin-bottom: 10px;
+    }
+
+    .tips .font-poppins ul {
+        margin-left: 40px;
+    }
+
+    li {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .error404-numb2 {
+        font-size: 70px;
+        line-height: 90px;
+    }
+
+    .font-poppins {
+        width: 90%;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+}

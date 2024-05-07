@@ -1,0 +1,85 @@
+/* @import "~react-image-gallery/styles/css/image-gallery.css"; */
+.hero-page {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+}
+
+.hero-overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  padding: 0 50px;
+}
+
+.hero-overlay-text > h1 {
+  margin-top: 40px;
+  font-size: 50px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.hero-overlay-text > p {
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+
+.hero-overlay-text  button {
+  font-size: 17px;
+  font-weight: 700;
+  padding: 10px 35px;
+  /* color: white; */
+  border: none;
+  background-color: #d8c8bd;
+  background-color: #c5a253;
+  transition: all 0.1s ease-in-out;
+}
+
+.hero-overlay-text > button:hover {
+  background-color: #a99e97;
+  color: white;
+}
+
+@media screen and (max-width: 1084px) and (min-width: 600px) {
+  .hero-overlay {
+    height: 85vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-overlay {
+    height: 85vh;
+  }
+
+  .hero-overlay-text{
+    padding: 0 30px;
+    gap: 15px;
+  }
+
+  .hero-overlay-text > h1 {
+    margin-top: 00px;
+    font-size: 25px;
+    letter-spacing: 4px;
+  }
+
+  .hero-overlay-text > p {
+    font-size: 17px;
+    letter-spacing: 3px;
+  }
+}

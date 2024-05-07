@@ -1,0 +1,35 @@
+.pnav {
+  width: 100%;
+  height: 80px;
+  background-color: #85677b;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.pnav > .Link {
+  text-decoration: none;
+  color: white;
+}
+
+.pnav > .Link > p {
+  color: white;
+}
+
+.pnav > .Link > p:hover {
+  text-decoration: underline;
+
+  text-decoration-color: rgb(252, 251, 251);
+}
+
+@media screen and (max-width: 900px) {
+  .pnav {
+    display: none;
+  }
+}

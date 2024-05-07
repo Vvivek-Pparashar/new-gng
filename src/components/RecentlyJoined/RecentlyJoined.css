@@ -1,0 +1,55 @@
+.rj{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 50px;
+}
+
+.rj > h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.rj-c{
+    width: 100%;
+    /* display: flex; */
+    padding: 0 5%;
+    /* gap: 5%; */
+}
+
+.rj-c1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.rj-c1 >img{
+    width: 100%;
+}
+
+.rj-c1 > h2{
+    font-size: 45px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .rj{
+        padding: 30px 0;
+    }
+    
+    .rj > h1{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .rj-c{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .rj-c1 > h2{
+        font-size: 30px;
+    }
+}

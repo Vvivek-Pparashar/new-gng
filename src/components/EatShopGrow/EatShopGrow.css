@@ -1,0 +1,112 @@
+.esg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.esg > img{
+    width: 850px;
+}
+
+.esg1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 5%;
+}
+
+.esg1l{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.esg1l > h1{
+    margin-top: 20px;
+    font-size: 55px;
+    color: #C5A253;
+    text-transform:uppercase;
+}
+
+.esg1l > p{
+    font-size: 19px;
+}
+
+.esg1r{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.esg1r > img{
+    width: 500px;
+}
+
+.esg2r{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.esg2r > img{
+    width: 500px;
+}
+
+.esg3r{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.esg3r > img{
+    width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+    .esg{
+        gap: 30px;
+        padding-bottom: 30px;
+        margin-top: 40px;
+        overflow-x: hidden;
+    }
+    
+    .esg > img{
+        margin-left: 10px;
+        width: 650px;
+        
+    }
+    
+    .esg1{
+        flex-direction: column;
+        padding: 0 5%;
+    }
+
+    .esgcr{
+        flex-direction: column-reverse;
+    }
+    
+    .esg1l > h1{
+        margin-top: 25px;
+        font-size: 45px;
+    }
+    
+    .esg1l > p{
+        font-size: 17px;
+    }
+    
+    .esg1r > img{
+        width: 100%;
+    }
+    
+    .esg2r > img{
+        width: 100%;
+    }
+    
+    .esg3r > img{
+        width: 100%;
+    }
+}

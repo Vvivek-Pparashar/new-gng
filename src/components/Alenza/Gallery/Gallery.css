@@ -1,0 +1,165 @@
+.gallery {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 50px 0 50px;
+}
+
+.gallery > h2 {
+  font-size: 70px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.gallery-crausal {
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gallery-crausal > .swiper {
+  width: 100%;
+  height: 200px;
+}
+.gallery-crausal > .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-crausal > .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-crausal > .mySwiper2 {
+  height: 600px;
+  width: 80%;
+  position: relative;
+  border-radius: 20px;
+}
+
+.gallery-crausal > .mySwiper {
+  width: 30%;
+  height: 100px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
+
+.gallery-crausal > .mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .gallery {
+    padding: 30px 0 30px;
+    background-image: url("../../../assets/cement-texture.jpg");
+  }
+
+  .gallery > h2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .gallery-crausal {
+    padding-top: 30px;
+  }
+
+  .gallery-crausal > .swiper {
+    width: 100%;
+    height: 200px;
+  }
+
+  .gallery-crausal > .mySwiper2 {
+    height: 400px;
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .gallery-crausal > .mySwiper {
+    width: 0%;
+    height: 0px;
+  }
+}
+
+/* Photos alignment */
+
+.un1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6) 100%),
+    url("../../../assets/un4.jpg");
+}
+
+.un2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6) 100%),
+    url("../../../assets/un6.jpg");
+}
+
+.un3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6) 100%),
+    url("../../../assets/un3.png");
+}
+
+.un4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6) 100%),
+    url("../../../assets/desktop - 4.jpg");
+}
+
+.un5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6) 100%),
+    url("../../../assets/desktop - 5.png");
+}
+
+.un6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6) 100%),
+    url("../../../assets/un6.jpg");
+  background-size: cover;
+}
+
+.vive {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.mySwiper .swiper-slide-thumb-active .un1 {
+  background: url("../../../assets/un4.jpg");
+  background-size: cover;
+}
+
+.mySwiper .swiper-slide-thumb-active .un2 {
+  background: url("../../../assets/un6.jpg");
+  background-size: cover;
+}
+
+.mySwiper .swiper-slide-thumb-active .un3 {
+  background: url("../../../assets/un3.png");
+  background-size: cover;
+}
+
+.mySwiper .swiper-slide-thumb-active .un4 {
+  background: url("../../../assets/desktop - 4.jpg");
+  background-size: cover;
+}
+
+.mySwiper .swiper-slide-thumb-active .un5 {
+  background: url("../../../assets/desktop - 5.png");
+  background-size: cover;
+}

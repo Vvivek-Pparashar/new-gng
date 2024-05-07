@@ -1,0 +1,106 @@
+.vision-container {
+  color: black;
+  display: flex;
+  gap: 2rem;
+  font-family: "Cormorant Garamond", serif;
+  width: 100%;
+}
+
+.vision-img-container {
+  height: 100vh;
+  max-height: 600px;
+  width: 60%;
+  background-size: cover;
+  background-position: right;
+  background-image: url("../../../assets/vision.png");
+}
+
+.vision-content {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 70%;
+  padding-right: 10px;
+  padding-bottom: 30px;
+}
+
+.vision-content > h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.vision-content > h2 {
+  font-size: 30px;
+  color: rgb(121, 79, 0);
+  line-height: 1.6rem;
+}
+
+.vision-content > ul {
+  margin-left: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vision-content li {
+  font-size: 20px;
+}
+
+.vision-content li::marker {
+  color: rgb(175, 114, 1);
+}
+
+@media screen and (max-width: 900px) {
+  .vision-container {
+    margin-top: 40px;
+    flex-direction: column-reverse;
+  }
+
+  .vision-img-container {
+    width: 100%;
+  }
+
+  .vision-content {
+    width: 85%;
+    padding: 0 10px;
+  }
+
+  .vision-content h1 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .vision-content li {
+    font-size: 17px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .vision-container {
+    margin-top: 40px;
+    flex-direction: column-reverse;
+  }
+
+  .vision-img-container {
+    width: 100%;
+  }
+
+  .vision-content {
+    margin: 15px;
+    width: 85%;
+    padding: 0 10px;
+  }
+
+  .vision-content h1 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .vision-content li {
+    font-size: 17px;
+    font-weight: 400;
+  }
+}

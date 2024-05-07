@@ -1,0 +1,77 @@
+.al-ov {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  padding: 5% 0;
+  gap: 5%;
+}
+
+.al-ov-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.al-ov-left > h2 {
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.al-ov-left > p {
+  font-size: 20px;
+}
+
+.al-ov-left-p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.al-ov-left > h6 {
+  font-size: 16px;
+}
+
+.al-ov-left > a > button {
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  padding: 13px 0;
+  margin-top: 20px;
+}
+
+.al-ov-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.al-ov-right > img {
+  width: 90%;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 900px) {
+  .al-ov {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .al-ov-left {
+    gap: 17px;
+  }
+
+  .al-ov-left > h2 {
+    font-size: 30px;
+  }
+
+  .al-ov-left > p {
+    font-size: 19px;
+  }
+
+  .al-ov-right > img {
+    width: 100%;
+    max-width: 600px;
+  }
+}

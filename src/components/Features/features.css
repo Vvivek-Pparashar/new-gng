@@ -1,0 +1,31 @@
+.features {
+  padding-top: 90px;
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: beige;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-inline: 5%;
+  gap: 50px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+@media screen and (max-width: 1084px) and (min-width: 600px) {
+  .features {
+    padding: 40px 0 00px;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .features {
+    padding: 40px 0 00px;
+    gap: 30px;
+  }
+
+  .f-component {
+    display: none;
+  }
+}
