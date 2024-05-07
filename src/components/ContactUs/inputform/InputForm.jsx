@@ -26,7 +26,7 @@ const InputForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://gng-builder-server.vercel.app/", data)
+      .post("https://gng-builder-server.vercel.app/contactUs", data)
       .then((response) => {
         console.log(response);
       })
