@@ -3,6 +3,7 @@ import sn1 from "../../assets/croma.jpg";
 import sn2 from "../../assets/masti.jpg";
 import sn3 from "../../assets/diy.jpg";
 import sn4 from "../../assets/multiplex.jpg";
+import sn5 from "../../assets/bikaner.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -65,7 +66,7 @@ const RecentlyJoined = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="rj-c1">
-              <img src={sn1} />
+              <img src={sn5} style={{objectFit:"cover", height:"335px"}}/>
               <h2>Bikanervale</h2>
             </div>
           </SwiperSlide>
