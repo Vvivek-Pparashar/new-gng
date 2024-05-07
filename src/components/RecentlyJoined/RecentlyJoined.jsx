@@ -2,7 +2,7 @@ import React from "react";
 import sn1 from "../../assets/croma.jpg";
 import sn2 from "../../assets/masti.jpg";
 import sn3 from "../../assets/diy.jpg";
-import sn4 from "../../assets/multiplex.jpg"
+import sn4 from "../../assets/multiplex.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -18,7 +18,16 @@ const RecentlyJoined = () => {
       <h1>Opening Shortly</h1>
       <div className="rj-c">
         <Swiper
-          slidesPerView={3}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 2.3,
+              spaceBetween: 30,
+            },
+          }}
           spaceBetween={30}
           autoplay={{
             delay: 1200,
