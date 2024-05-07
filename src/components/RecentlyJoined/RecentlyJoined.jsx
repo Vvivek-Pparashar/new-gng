@@ -66,7 +66,7 @@ const RecentlyJoined = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="rj-c1">
-              <img src={sn5} style={{objectFit:"cover", height:"335px"}}/>
+              <img src={sn5} id="abc"/>
               <h2>Bikanervale</h2>
             </div>
           </SwiperSlide>

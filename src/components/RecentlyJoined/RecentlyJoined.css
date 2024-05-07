@@ -32,7 +32,11 @@
 .rj-c1 > h2{
     font-size: 45px;
 }
-
+#abc{
+    object-fit: cover;
+    height: 335px;
+    /* width: 100px; */
+}
 
 @media screen and (max-width: 600px) {
     .rj{
@@ -51,5 +55,9 @@
     
     .rj-c1 > h2{
         font-size: 30px;
+    }
+
+    #abc{
+        height: 200px;
     }
 }
