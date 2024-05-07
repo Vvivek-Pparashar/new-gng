@@ -26,7 +26,7 @@ const InputForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://192.168.29.251:3000/contactUs", data)
+      .post("https://gng-builder-server.vercel.app/", data)
       .then((response) => {
         console.log(response);
       })
@@ -43,7 +43,7 @@ const InputForm = () => {
       city: "",
       message: "",
     });
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   };
 
   return (

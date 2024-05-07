@@ -6,7 +6,7 @@ const DataCollector = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("http://192.168.29.251:3000/getAll")
+      .get("https://gng-builder-server.vercel.app/")
       .then((res) => {
         console.log(res.data);
         setData(res.data);
