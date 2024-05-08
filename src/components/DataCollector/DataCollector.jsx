@@ -24,8 +24,8 @@ const DataCollector = () => {
           <tr className="dc-table-tr">
           <th className="dc-table-th">Id</th>
             <th className="dc-table-th">Name</th>
-            <th className="dc-table-th">City</th>
             <th className="dc-table-th">mobile No</th>
+            <th className="dc-table-th">City</th>
             <th className="dc-table-th">email</th>
           </tr>
           {data.slice(0).reverse().map((e, index) => {
@@ -35,8 +35,8 @@ const DataCollector = () => {
                 <td className="dc-table-td">{index +1}</td>
                 <td className="dc-table-td">{e.name}</td>
                 <td className="dc-table-td">{e.mobile}</td>
-                <td className="dc-table-td">{e.email}</td>
                 <td className="dc-table-td">{e.city}</td>
+                <td className="dc-table-td">{e.email?e.email : "Nil"}</td>
               </tr>
             );
           })}
