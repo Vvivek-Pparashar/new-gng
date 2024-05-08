@@ -3,8 +3,8 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import f1 from "../../../assets/f1.png";
-import f2 from "../../../assets/f2.png";
-import f3 from "../../../assets/f3.png";
+// import f2 from "../../../assets/f2.png";
+// import f3 from "../../../assets/f3.png";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -35,24 +35,6 @@ export default function FloorPlan() {
         <SwiperSlide>
           <div className="swiper-zoom-container">
             <img src={f1} alt="Commercial project in zirakpur" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="swiper-zoom-container">
-            <img
-              src={f2}
-              alt="Real estate investment
-"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="swiper-zoom-container">
-            <img
-              src={f3}
-              alt="Commercial property for rent
-"
-            />
           </div>
         </SwiperSlide>
       </Swiper>

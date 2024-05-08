@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   ClockCircleTwoTone,
+  EnvironmentTwoTone,
   HddTwoTone,
   MailTwoTone,
   MessageTwoTone,
@@ -8,8 +9,11 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 import Floating from "../FloatingWhatsapp/Floating";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const ContactUsCC = () => {
+  const navigate = useNavigate();
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -19,19 +23,41 @@ const ContactUsCC = () => {
     message: "",
   });
 
-  let message = `First Name = ${data.firstName} %0DLast Name = ${data.lastName}%0DMobile No. = ${data.mobileNo}%0DEmail = ${data.email} %0DMessage = ${data.message}`;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .post("https://gng-builder-server.vercel.app/contactUs", data)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log("error ", error);
+      });
 
-  console.log(message);
+    setData({
+      ...data,
+      firstName: "",
+      lastName: "",
+      mobileNo: "",
+      email: "",
+      city: "",
+      message: "",
+    });
+    navigate("/")
+  };
+
   return (
     <div>
-      <div className="container-xxl py-5" style={{marginTop:"70px"}}>
+      <div className="container-xxl py-5" style={{ marginTop: "70px" }}>
         <div className="container">
           <div
             className="text-center mx-auto mb-5 wow fadeInUp"
             data-wow-delay="0.1s"
             style={{ maxWidth: "600px;" }}
           >
-            <h1 className="mb-3" style={{fontSize:"60px"}}>Contact Us</h1>
+            <h1 className="mb-3" style={{ fontSize: "60px" }}>
+              Contact Us
+            </h1>
           </div>
           <div className="row g-4">
             <div className="col-12">
@@ -113,7 +139,10 @@ const ContactUsCC = () => {
             </div>
             <div className="col-md-6">
               <div className="wow fadeInUp" data-wow-delay="0.5s">
-                <div className="if-input-form">
+                <form
+                  className="if-input-form"
+                  onSubmit={(e) => handleSubmit(e)}
+                >
                   <div className="if-input-form-row">
                     <div className="if-input-form-container">
                       <div className="if-input-form-abs">
@@ -126,6 +155,7 @@ const ContactUsCC = () => {
                         onChange={(e) =>
                           setData({ ...data, firstName: e.target.value })
                         }
+                        required
                       />
                     </div>
 
@@ -156,6 +186,7 @@ const ContactUsCC = () => {
                         onChange={(e) =>
                           setData({ ...data, mobileNo: e.target.value })
                         }
+                        required
                       />
                     </div>
 
@@ -186,7 +217,7 @@ const ContactUsCC = () => {
                   <div className="if-input-form-row">
                     <div className="if-input-form-container">
                       <div className="if-input-form-abs">
-                        <MessageTwoTone />
+                        <EnvironmentTwoTone />
                       </div>
                       <input
                         placeholder="City"
@@ -195,16 +226,13 @@ const ContactUsCC = () => {
                         onChange={(e) =>
                           setData({ ...data, message: e.target.value })
                         }
+                        required
                       />
                     </div>
                   </div>
 
-                  <a
-                    href={`mailto:${"vivekparashartkd@gmail.com"}?subject= ${"subject"}&body=${message}`}
-                  >
-                    <button onClick={onclick}>Contact us</button>
-                  </a>
-                </div>
+                  <button>Submit</button>
+                </form>
               </div>
             </div>
           </div>
